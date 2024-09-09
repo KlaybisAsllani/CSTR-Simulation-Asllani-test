@@ -1,1 +1,3 @@
-# CSTR-simulation-Asllani-test
+# Test for simple simulation of Continuous Stirred Tank Reactor (CSTR) for simple first order reaction (A --> B)
+- Includes response to various types of input stimuli (step changes, ramp inputs, and sinusoidal inputs)
+- Incorporation of PID controller to maintain concentration set point.
