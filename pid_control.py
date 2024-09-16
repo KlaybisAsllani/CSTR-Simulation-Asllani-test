@@ -17,10 +17,13 @@ def simulate_pid_control():
 
     system = control.TransferFunction(num, den)
 
-    # PID controller parameters
-    Kp = 1.0
-    Ki = 0.1
-    Kd = 0.01
+    # Ziegler-Nichols tuning
+    Ku = 2.0  # Ultimate gain
+    Tu = 10.0  # Ultimate period (s)
+
+    Kp = 0.6 * Ku  # Proportional gain
+    Ki = 1.2 * Ku / Tu  # Integral gain
+    Kd = 3 * Ku * Tu / 40  # Derivative gain
 
     # Create PID controller
     pid = control.TransferFunction([Kd, Kp, Ki], [1, 0])
