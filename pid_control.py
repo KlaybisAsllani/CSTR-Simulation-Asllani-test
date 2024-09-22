@@ -3,41 +3,27 @@ import matplotlib.pyplot as plt
 import control
 
 def simulate_pid_control():
-    # System parameters
-    V = 1.0  # Reactor volume (m³)
-    F = 0.5  # Volumetric flow rate (m³/s)
-    k = 0.1  # Reaction rate constant (1/s)
-
-    # Time constant
+    V = 1.0
+    F = 0.5
+    k = 0.1
     tau = V / (F + V * k)
-
-    # For transfer function 
-    num = [1]  # Numerator (gain = 1)
-    den = [tau, 1]  # Denominator (tau s + 1)
-
+    num = [1]
+    den = [tau, 1]
     system = control.TransferFunction(num, den)
-
-    # Ziegler-Nichols tuning
-    Ku = 2.0  # Ultimate gain
-    Tu = 10.0  # Ultimate period (s)
-
-    Kp = 0.6 * Ku  # Proportional gain
-    Ki = 1.2 * Ku / Tu  # Integral gain
-    Kd = 3 * Ku * Tu / 40  # Derivative gain
-
-    # Create PID controller
+    Ku = 2.0
+    Tu = 10.0
+    Kp = 0.6 * Ku
+    Ki = 1.2 * Ku / Tu
+    Kd = 3 * Ku * Tu / 40
     pid = control.TransferFunction([Kd, Kp, Ki], [1, 0])
-
+    c_ref = 0.8
     closed_loop = control.feedback(pid * system, 1)
-
-    # Simulate the step response of the closed-loop system
     t, response = control.step_response(closed_loop)
-
-    # Plot the result
+    response = response * c_ref
     plt.plot(t, response)
-    plt.title('CSTR Step Response with PID Control (Concentration)')
+    plt.title('CSTR Step Response with PID Control (Concentration of Product B)')
     plt.xlabel('Time [s]')
-    plt.ylabel('Concentration')
+    plt.ylabel('Concentration of Product B')
     plt.grid(True)
     plt.show()
 
