@@ -1,4 +1,4 @@
-# Simple simulation of a first order CSTR
+# Simple simulation of a first order Continuous Stirred Tank Reactor (CSTR)
 - Includes response to various types of concentration input stimuli (step changes, ramp inputs, and sinusoidal inputs)
 - Incorporation of PID controller to maintain exit concentration set point 
 - Simulates the response of an MPC controller for a heat exchanger model
