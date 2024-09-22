@@ -14,7 +14,7 @@ The reactor is modeled with a time constant **𝜏** and a gain **K**. The purpo
 - **Reaction Rate Constant (k)**: Set to 0.1 s<sup>-1<sup>
 - **Set Point for Exit Concentration B**: Set to 0.8
   
-### Reactor Formulas
+#### Reactor Formulas:
 V $\frac{dc}{dt}$ = F*C<sub>a</sub><sub>0</sub> - (F+kv)*C<sub>a</sub>
 
 ,and
