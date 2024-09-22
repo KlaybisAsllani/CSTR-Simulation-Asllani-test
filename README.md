@@ -25,9 +25,6 @@ where:
 - 𝜏 = $\frac{V}{F+kV}$
 - K = $\frac{1}{kV/F}$
 
-At steady state, $\frac{dc}{dt}$ = 0, so the equation becomes:
-c= K*C<sub>a</sub><sub>0</sub>
-
 <br>
 
 #### Reference
