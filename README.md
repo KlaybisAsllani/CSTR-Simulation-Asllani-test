@@ -8,7 +8,7 @@
 #### Description of the System
 A liquid stream enters the reactor at a volumetric flow rate **F** and contains reactant **A**. Reactant A decomposes in the reactor according to the irreversible chemical reaction (**A→B**), proceeding at a rate of **r=k*C<sub>a</sub>**
 
-The reactor is modeled with a time constant **𝜏** and a gain **K**. The purpose of the control system is to maintain the concentration of A leaving the reactor at a desired value despite variations in the inlet concentration **C<sub>a</sub><sub>0</sub>**
+The reactor is modeled with a time constant **𝜏** and a gain **K**. The purpose of the control system is to maintain the concentration of **B** leaving the reactor at a desired value despite variations in the inlet concentration **C<sub>a</sub><sub>0</sub>**
 
 #### Parameters
 - **Volume (V)**: Set to 1.0 m³
