@@ -13,7 +13,7 @@ The reactor is modeled with a time constant **𝜏** and a gain **K**. The purpo
 ### Parameters
 - **Volume (V)**: Set to 1.0 m³
 - **Flow Rate (F)**: Set to 0.5 m³/s
-- **Reaction Rate Constant (k)**: Set to 0.1 1/s
+- **Reaction Rate Constant (k)**: Set to 0.1 s<sup>-1<sup>
 - **Set Point for Exit Concentration B**: Set to 0.8
   
 ### Reactor Formulas
