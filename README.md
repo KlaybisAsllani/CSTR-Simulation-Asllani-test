@@ -30,6 +30,7 @@ where:
 At steady state, $\frac{dc}{dt}$ = 0, so the equation becomes:
 c= K*C<sub>a</sub><sub>0</sub>
 
+<br>
 
 #### Reference
-Coughanowr, D. R., & LeBlanc, S. E. (2009). *Process Systems Analysis and Control* . McGraw-Hill Education. Pages 123-124.
+Coughanower, D. R.; Koppel, L. B. *Process Systems Analysis and Control*; McGraw-Hill Chemical Engineering Series, McGraw-Hill Companies: New York, 1964; pp 123–124.
