@@ -19,7 +19,7 @@ The reactor is modeled with a time constant **𝜏** and a gain **K**. The purpo
 ### Reactor Formulas
 V $\frac{dc}{dt}$ = F*C<sub>a</sub><sub>0</sub> - (F+kv)*C<sub>a</sub>
 
-and
+,and
 
 𝜏 $\frac{dc}{dt}$ + C<sub>a</sub> = K*C<sub>a</sub><sub>0</sub> 
 
