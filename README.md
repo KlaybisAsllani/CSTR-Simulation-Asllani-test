@@ -25,4 +25,4 @@ c= K*C<sub>a</sub><sub>0</sub>
 
 
 #### Reference
-Coughanowr, D. R., & LeBlanc, S. E. (2009). *Process Systems Analysis and Control* (3rd ed.). McGraw-Hill Education. Pages 123-124.
+Coughanowr, D. R., & LeBlanc, S. E. (2009). *Process Systems Analysis and Control* . McGraw-Hill Education. Pages 123-124.
