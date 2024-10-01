@@ -9,7 +9,7 @@ A liquid stream of **A** enters the reactor at a volumetric flow rate **F** , de
 
 The reactor is modeled with a time constant **𝜏** and a gain **K**. The purpose of the control system is to maintain the concentration of **B** leaving the reactor at a desired value despite variations in the inlet concentration **C<sub>a</sub><sub>0</sub>**
 
-### Parameters:
+### Default Parameters:
 - **Volume (V)**: Set to 1.0 m³
 - **Flow Rate (F)**: Set to 0.5 m³/s
 - **Reaction Rate Constant (k)**: Set to 0.1 s<sup>-1<sup>
@@ -25,8 +25,13 @@ V $\frac{dc}{dt}$ = F*C<sub>a</sub><sub>0</sub> - (F+kv)*C<sub>a</sub>
 where:
 - 𝜏 = $\frac{V}{F+kV}$
 - K = $\frac{1}{kV/F}$
-
+  
 <br>
 
 #### Reference
 Coughanower, D. R.; Koppel, L. B. *Process Systems Analysis and Control*; McGraw-Hill Chemical Engineering Series, McGraw-Hill Companies: New York, 1964; pp 123–124.
+
+<br>
+
+## Update 10-01-2024 (MM/DD/YY)
+Implemented Python's argparse to allow command-line inputs from users to change system parameters. If the user doesn’t provide any specific inputs when running the script, the default parameters, which are defined in the section above, will be used.
