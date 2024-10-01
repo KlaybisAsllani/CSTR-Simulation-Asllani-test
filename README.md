@@ -26,12 +26,11 @@ where:
 - 𝜏 = $\frac{V}{F+kV}$
 - K = $\frac{1}{kV/F}$
   
-<br>
 
 #### Reference
 Coughanower, D. R.; Koppel, L. B. *Process Systems Analysis and Control*; McGraw-Hill Chemical Engineering Series, McGraw-Hill Companies: New York, 1964; pp 123–124.
 
 <br>
 
-## Update 10-01-2024 (MM/DD/YY)
+## Update Oct 1, 2024
 Implemented Python's argparse to allow command-line inputs from users to change system parameters. If the user doesn’t provide any specific inputs when running the script, the default parameters, which are defined in the section above, will be used.
